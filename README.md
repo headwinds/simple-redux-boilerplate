@@ -8,3 +8,6 @@ I enjoyed working through his example but got stuck when I wanted to start exper
 ![image counter](screenshot.png)
 
 I would recommend starting with David's version first and when you're ready for images you might consider looking at this work afterwards. 
+
+
+[demo](http://www.headwinds.net/lab/redux/image-counter/)
