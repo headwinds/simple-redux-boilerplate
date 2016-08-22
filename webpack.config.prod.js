@@ -4,12 +4,12 @@ const webpack = require('webpack');
 module.exports = {
   devtool: 'source-map',
   entry: [
-    './src/index'
+    './src/index.js'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/static/'
+    publicPath: ''
   },
   plugins: [
     /**
@@ -45,6 +45,13 @@ module.exports = {
       {
         test: /\.scss$/,
         loader: 'style!css!sass'
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loaders: [
+          'file?hash=sha512&digest=hex&name=[hash].[ext]',
+          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
       }
     ]
   }
