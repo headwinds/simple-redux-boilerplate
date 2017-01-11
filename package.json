@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "My simple redux application.",
   "scripts": {
+    "prestart": "npm install",
     "clean": "rimraf dist",
-    "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
-    "build": "npm run clean && npm run build:webpack",
+    "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js --progress --profile --colors",
+    "build": "npm run clean && npm run build:webpack --progress --profile --colors",
     "dev": "NODE_ENV=development npm start",
     "start": "node devServer.js",
     "lint": "eslint src"
@@ -32,8 +33,8 @@
     "eslint-plugin-react": "^3.16.1",
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.3",
-    "file-loader": "^0.9.0",
-    "image-webpack-loader": "^2.0.0",
+    "html-webpack-plugin": "^2.24.1",
+    "image-webpack-loader": "^3.1.0",
     "node-sass": "^3.4.2",
     "redux-devtools": "^3.0.1",
     "redux-devtools-dock-monitor": "^1.0.1",

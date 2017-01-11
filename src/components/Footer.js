@@ -5,7 +5,7 @@ export default class Footer extends Component {
     return (
       <footer>
         <span id="footer-text-wrap">
-        <a href="https://github.com/tsaiDavid/simple-redux-boilerplate">original</a> || <a href="https://github.com/headwinds/simple-redux-boilerplate">fork</a>
+        Stolen in the 6 <span id="heart">🏴‍☠️</span> by <a href="http://www.headwinds.net">headwinds</a>.
         </span>
       </footer>
     );
